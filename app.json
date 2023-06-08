@@ -1,0 +1,96 @@
+{
+  "expo": {
+    "name": "Your App",
+    "slug": "yourapp",
+    "version": "1.0.0",
+    "plugins": [
+      [
+        "expo-document-picker",
+        {
+          "appleTeamId": "H6TN8YH8N7I",
+          "iCloudContainerEnvironment": "Production"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#ffffff",
+          "mode": "production"
+        }
+      ]
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#ffffff",
+      "resizeMode": "contain"
+    },
+    "notification": {
+      "icon": "./assets/icon.png",
+      "color": "#ffffff",
+      "iosDisplayInForeground": true,
+      "androidMode": "default"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "usesAppleSignIn": true,
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourdomain",
+      "buildNumber": "1",
+      "usesIcloudStorage": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "HomListi uses the camera to capture and upload user profile image and Listing Image to the server.",
+        "NSPhotoLibraryUsageDescription": "HomListi needs access to the photo library to select and upload user profile image and Listing Image to the server.",
+        "NSPhotoLibraryAddUsageDescription": "HomListi needs access to the photo library to select and upload user profile image and Listing Image to the server.",
+        "NSLocationWhenInUseUsageDescription": "HomListi usages device location on listing information, Listing search Data and User information.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "HomListi usages device location on listing information, Listing search Data and User information.",
+        "NSLocationAlwaysUsageDescription": "HomListi uses device location on listing information, Listing search Data and User information.",
+        "NSMicrophoneUsageDescription": "HomListi uses your microphone while taking video of your property for uploading in listing information.",
+        "NSUserTrackingUsageDescription": "HomListi wants to track you to collect IDFA to deliver personalised ads.",
+        "CFBundleAllowMixedLocalizations": true,
+        "UIBackgroundModes": ["remote-notification"]
+      },
+      "config": {
+        "googleMapsApiKey": "2bLSVyGX5GEggT2wARP0noZInG_AIzaSyCs0TJf"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.yourdomain",
+      "config": {
+        "googleMaps": {
+          "apiKey": "2bLSVyGX5GEggT2wARP0noZInG_AIzaSyCs0TJf"
+        }
+      },
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#fff"
+      },
+      "permissions": [
+        "CAMERA",
+        "CAMERA_ROLL",
+        "MEDIA_LIBRARY",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECORD_AUDIO",
+        "READ_PHONE_STATE",
+        "READ_CONTACTS",
+        "LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "android.permission.INTERNET",
+        "POST_NOTIFICATIONS"
+      ],
+      "versionCode": 1
+    },
+    "scheme": "homlisti"
+  }
+}
